@@ -1,10 +1,34 @@
 import styled from 'styled-components';
 
-export const AuthForm = styled.form``;
+export const AuthFormParent = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #dddddd;
+`;
 
-export const AuthFormHeading = styled.h1``;
+export const AuthForm = styled.form`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* border: 1px solid #999999;
+	border-radius: 10px; */
+	padding: 30px 20px;
+	margin-top: 50px;
+`;
 
-export const AuthFormInputDiv = styled.div``;
+export const AuthFormHeading = styled.h1`
+	margin-top: 150px;
+`;
+
+export const AuthFormInputDiv = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+`;
 
 export const AuthFormLabel = styled.label``;
 

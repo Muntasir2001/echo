@@ -1,19 +1,14 @@
 import React from 'react';
 
-import {
-	AuthForm,
-	AuthFormHeading,
-	AuthFormInputDiv,
-	AuthFormLabel,
-	AuthFormInput,
-	AuthFormSubmitDiv,
-	AuthFormSubmitInput,
-} from './components/AuthFormComponents';
+import { Layout } from './components/Utils';
+import Login from './pages/Login';
 
 function App() {
 	return (
 		<>
-			<h3>helllo</h3>
+			<Layout>
+				<Login />
+			</Layout>
 		</>
 	);
 }
