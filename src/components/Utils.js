@@ -6,3 +6,5 @@ export const Layout = styled.div`
 	background-color: #30475e;
 	height: 100vh;
 `;
+
+export const Title = styled.h1``;

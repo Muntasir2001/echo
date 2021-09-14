@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Link, useHistory } from 'react-router-dom';
+// import { Link, useHistory } from 'react-router-dom';
 
 import {
 	AuthFormParent,
@@ -50,7 +50,8 @@ const Login = () => {
 							required
 						/>
 					</AuthFormInputDiv>
-					<AuthFormInputDiv>
+
+					<AuthFormInputDiv marginTop='20px'>
 						<AuthFormLabel>Password</AuthFormLabel>
 						<AuthFormInput
 							type='password'
@@ -59,6 +60,16 @@ const Login = () => {
 							required
 						/>
 					</AuthFormInputDiv>
+
+					<AuthFormSubmitDiv marginTop='30px'>
+						<AuthFormSubmitInput
+							type='submit'
+							name='submit'
+							value='Login'
+							onChange={onPasswordChange}
+							required
+						/>
+					</AuthFormSubmitDiv>
 				</AuthForm>
 			</AuthFormParent>
 		</>
