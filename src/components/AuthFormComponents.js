@@ -69,3 +69,20 @@ export const AuthFormSubmitInput = styled.input`
 		background-color: #c2c2c2;
 	}
 `;
+
+export const AuthFormButtonDiv = styled.div`
+	margin-top: 50px;
+`;
+
+export const AuthFormButton = styled.button`
+	padding: 10px 10px;
+	border: 2px solid #222831;
+	color: #f3f3f3;
+	background-color: #222831;
+
+	&:hover {
+		cursor: pointer;
+		background-color: #1b2027;
+		border: 2px solid #1b2027;
+	}
+`;

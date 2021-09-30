@@ -15,12 +15,9 @@ import {
 	AuthFormButton,
 } from '../components/AuthFormComponents';
 
-const Login = () => {
+const CreateAccount = () => {
 	const [username, setUsername] = useState({ email: '' });
 	const [password, setPassword] = useState({ password: '' });
-	// const [error, setError] = useState(false);
-	// const [errorMssg, setErrorMssg] = useState('');
-	// const [loading, setLoading] = useState(false);
 
 	const onUsernameChange = (e) => {
 		setUsername(() => {
@@ -41,7 +38,7 @@ const Login = () => {
 	return (
 		<>
 			<AuthFormParent>
-				<AuthFormHeading>Login</AuthFormHeading>
+				<AuthFormHeading>Create Account</AuthFormHeading>
 				<AuthForm>
 					<AuthFormInputDiv>
 						<AuthFormLabel>Username</AuthFormLabel>
@@ -67,15 +64,15 @@ const Login = () => {
 						<AuthFormSubmitInput
 							type='submit'
 							name='submit'
-							value='Login'
+							value='Create Account'
 							onChange={onPasswordChange}
 							required
 						/>
 					</AuthFormSubmitDiv>
 
 					<AuthFormButtonDiv>
-						<Link to='/create-account'>
-							<AuthFormButton>Create Account</AuthFormButton>
+						<Link to='/login'>
+							<AuthFormButton>Login</AuthFormButton>
 						</Link>
 					</AuthFormButtonDiv>
 				</AuthForm>
@@ -84,4 +81,4 @@ const Login = () => {
 	);
 };
 
-export default Login;
+export default CreateAccount;
